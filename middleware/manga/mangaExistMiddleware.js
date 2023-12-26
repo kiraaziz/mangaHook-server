@@ -5,7 +5,7 @@ const mangaExist = (req, res, next) => {
 
     const mangaUrl = `${url}/manga/${req.params.id}`
 
-    consoole.log(mangaUrl)
+    console.log(mangaUrl)
 
     httpReq(mangaUrl)
         .then((html) => {
