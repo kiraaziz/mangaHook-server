@@ -9,6 +9,8 @@ const SearchManga = (req, res) => {
     const query = `${req.params.id}?page=${page}`
     const url = `${urlLink}/search/${query}`
 
+    console.log(url)
+
     httpReq(url)
         .then((html) => {
 
