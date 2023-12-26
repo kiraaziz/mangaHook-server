@@ -5,6 +5,8 @@ const mangaExist = (req, res, next) => {
 
     const mangaUrl = `${url}/chapter/${req.params.id}/${req.params.ch}`
 
+    console.log(mangaUrl)
+    
     httpReq(mangaUrl)
         .then((html) => {
             const httpState = false //Todo : if there is 404 text 
